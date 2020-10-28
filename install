@@ -61,4 +61,4 @@ echo "icons for ranger"
 git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
 
 echo "download config ranger"
-wget https://raw.githubusercontent.com/alefuedev/rice/master/.config/ranger/rc.conf ~/.config/ranger/
+wget https://raw.githubusercontent.com/alefuedev/dot-files/main/.config/ranger/rc.conf
