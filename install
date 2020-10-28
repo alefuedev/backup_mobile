@@ -49,7 +49,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 echo "Downloading vimrc"
-wget https://raw.githubusercontent.com/alefuedev/rice/master/.vimrc
+wget https://raw.githubusercontent.com/alefuedev/dot-files/main/.vimrc 
 
 echo "Oh-My-Zsh"
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
