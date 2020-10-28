@@ -1,0 +1,64 @@
+#!/data/data/com.termux/files/usr/bin/bash
+echo "update"
+pkg update
+
+echo "termux-api"
+pkg install termux-api
+
+echo "installing vim"
+pkg install vim -y
+
+echo "installing ranger"
+pkg install ranger -y
+
+echo "installing cmus"
+pkg install cmus -y
+
+echo "installing wget"
+pkg install wget -y
+
+echo "installing curl"
+pkg install curl -y
+
+echo "installing nodejs"
+pkg install nodejs -y
+
+echo "install openssh"
+pkg install openssh -y
+
+echo "installing exiftool"
+pkg install exiftool -y
+
+echo "installing tty-clock"
+pkg install tty-clock -y
+
+echo "install neofetch"
+pkg install neofetch -y
+
+echo "install pwgen"
+pkg install pwgen -y
+
+echo "installing zsh"
+pkg install zsh
+
+echo "zsh as default shell"
+chsh -s $(zsh)
+
+echo "installing plugInstall for vim"
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+echo "Downloading vimrc"
+wget https://raw.githubusercontent.com/alefuedev/rice/master/.vimrc
+
+echo "Oh-My-Zsh"
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+echo "Downloading .zshrc"
+wget https://raw.githubusercontent.com/alefuedev/backup_mobile/master/.zshrc
+
+echo "icons for ranger"
+git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons
+
+echo "download config ranger"
+wget https://raw.githubusercontent.com/alefuedev/rice/master/.config/ranger/rc.conf ~/.config/ranger/
